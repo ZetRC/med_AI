@@ -1,5 +1,6 @@
 .navbar-brand {
   color: #65a1db !important;
+  font-weight: bold;
 }
 
 nav .nav-link {
@@ -7,12 +8,11 @@ nav .nav-link {
   padding-right: 1.15rem !important;
 }
 nav .navbar-brand {
-  color: #65a1db !important;
-  font-weight: bold;
   position: absolute;
 }
 nav .active .nav-link {
   color: #65a1db !important;
+  font-weight: bold;
 }
 
 .main {
@@ -47,12 +47,17 @@ nav .active .nav-link {
 }
 
 .perks {
-  text-align: center;
   margin: 5rem 0;
   padding: 0 4rem;
 }
 .perks .perk {
+  display: flex;
   padding: 0 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  width: 1175px;
+  margin: 0 auto;
 }
 .perks .perk i {
   font-size: 4rem;
@@ -60,6 +65,12 @@ nav .active .nav-link {
   margin-bottom: 1rem;
   color: #65a1db;
   opacity: 0.75;
+  margin-right: 2.5rem;
+  margin-left: 0.5rem;
+}
+.perks .perk .fa-user-doctor {
+  padding-left: 1rem;
+  padding-right: 10px;
 }
 .perks .perk .title {
   margin-bottom: 0.5rem;
@@ -90,7 +101,7 @@ nav .active .nav-link {
 }
 
 .getStarted {
-  margin: 3rem 0;
+  margin: 7rem 0;
 }
 .getStarted .title {
   text-align: center;
@@ -131,6 +142,10 @@ nav .active .nav-link {
   font-size: 1rem;
 }
 
+footer {
+  max-width: 1175px;
+  margin: 0 auto;
+}
 footer i {
   padding: 0 0.5rem;
   color: #ccc;

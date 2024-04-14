@@ -3,6 +3,7 @@ $background: aliceblue;
 
 .navbar-brand {
   color: $main !important;
+  font-weight: bold;
 }
 
 nav {
@@ -11,13 +12,12 @@ nav {
     padding-right: 1.15rem !important;
   }
   .navbar-brand {
-    color: $main !important;
-    font-weight: bold;
     position: absolute;
   }
 
   .active .nav-link {
     color: $main !important;
+    font-weight: bold;
   }
 }
 
@@ -53,11 +53,16 @@ nav {
 }
 
 .perks {
-  text-align: center;
   margin: 5rem 0;
   padding: 0 4rem;
   .perk {
+    display: flex;
     padding: 0 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    width: 1175px;
+    margin: 0 auto;
 
     i {
       font-size: 4rem;
@@ -65,6 +70,12 @@ nav {
       margin-bottom: 1rem;
       color: $main;
       opacity: 0.75;
+      margin-right: 2.5rem;
+      margin-left: 0.5rem;
+    }
+    .fa-user-doctor {
+      padding-left: 1rem;
+      padding-right: 10px;
     }
     .title {
       margin-bottom: 0.5rem;
@@ -97,7 +108,7 @@ nav {
 }
 
 .getStarted {
-  margin: 3rem 0;
+  margin: 7rem 0;
   .title {
     text-align: center;
     margin-bottom: 0.5rem;
@@ -140,6 +151,8 @@ nav {
 }
 
 footer {
+  max-width: 1175px;
+  margin: 0 auto;
   i {
     padding: 0 0.5rem;
     color: #ccc;
