@@ -60,7 +60,7 @@ nav .active .nav-link {
   margin: 0 auto;
 }
 .perks .perk i {
-  font-size: 4rem;
+  font-size: 4.5rem;
   counter-reset: #65a1db;
   margin-bottom: 1rem;
   color: #65a1db;
@@ -69,8 +69,8 @@ nav .active .nav-link {
   margin-left: 0.5rem;
 }
 .perks .perk .fa-user-doctor {
-  padding-left: 1rem;
-  padding-right: 10px;
+  padding-left: 12px;
+  padding-right: 11px;
 }
 .perks .perk .title {
   margin-bottom: 0.5rem;
