@@ -3,12 +3,27 @@
   font-weight: bold;
 }
 
-nav .nav-link {
-  padding-left: 1.15rem !important;
-  padding-right: 1.15rem !important;
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
 }
-nav .navbar-brand {
-  position: absolute;
+nav .nav-content {
+  max-width: 968px;
+  margin: 0 auto;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  width: 969px;
+}
+nav .nav-pl {
+  padding-left: 1.15rem !important;
+}
+nav .nav-pr {
+  padding-right: 1.15rem !important;
 }
 nav .active .nav-link {
   color: #65a1db !important;
@@ -16,7 +31,7 @@ nav .active .nav-link {
 }
 
 .main {
-  background-color: aliceblue;
+  background-color: #e8f2fd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +97,7 @@ nav .active .nav-link {
 
 .JoinUsBanner {
   padding: 5rem 0;
-  background: aliceblue;
+  background: #e8f2fd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,12 +107,15 @@ nav .active .nav-link {
 }
 .JoinUsBanner .title {
   text-align: center;
+  margin-bottom: 1rem;
 }
 .JoinUsBanner .desc {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .JoinUsBanner img {
   width: 100%;
+  border-radius: 1.5rem;
 }
 
 .getStarted {

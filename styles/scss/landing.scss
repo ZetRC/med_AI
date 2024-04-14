@@ -1,5 +1,5 @@
 $main: #65a1db;
-$background: aliceblue;
+$background: #e8f2fd;
 
 .navbar-brand {
   color: $main !important;
@@ -7,12 +7,27 @@ $background: aliceblue;
 }
 
 nav {
-  .nav-link {
-    padding-left: 1.15rem !important;
-    padding-right: 1.15rem !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
+
+  .nav-content {
+    max-width: 968px;
+    margin: 0 auto;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    width: 969px;
   }
-  .navbar-brand {
-    position: absolute;
+  .nav-pl {
+    padding-left: 1.15rem !important;
+  }
+
+  .nav-pr {
+    padding-right: 1.15rem !important;
   }
 
   .active .nav-link {
@@ -98,12 +113,15 @@ nav {
   }
   .title {
     text-align: center;
+    margin-bottom: 1rem;
   }
   .desc {
     text-align: center;
+    margin-bottom: 3rem;
   }
   img {
     width: 100%;
+    border-radius: 1.5rem;
   }
 }
 
