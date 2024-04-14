@@ -35,8 +35,8 @@ nav .active .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 9rem;
-  padding-bottom: 7rem;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
 }
 .main .content {
   width: 100%;
