@@ -1,0 +1,147 @@
+$main: #65a1db;
+
+body {
+  background-color: #f9f9f9;
+}
+
+.form-wrapper {
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  max-width: 37rem;
+  margin: 2.5rem auto;
+  padding: 4rem;
+  background-color: white;
+}
+
+.linear-form {
+  select:focus,
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  .uneditable-input:focus {
+    border-color: $main;
+    border-width: 3px;
+    outline: 0 none;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column-reverse;
+    .info-label {
+      color: #606060;
+      font-size: 1rem;
+      position: relative;
+      top: 30px;
+      transition: 0.15s ease-in-out;
+      pointer-events: none;
+      height: 24px;
+      padding: 0 10px;
+      width: fit-content;
+      background-color: white;
+    }
+
+    .linear-input:focus + .info-label {
+      top: 0px;
+      font-size: 12px;
+    }
+
+    .error-label {
+      color: #dc3545;
+      font-size: 10pt;
+      margin-left: 10px;
+      position: relative;
+      top: -10px;
+      opacity: 0.9;
+    }
+
+    .linear-input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      text-align: right;
+      color: #606060;
+      margin-bottom: 20px;
+    }
+
+    .linear-select {
+      text-align: left;
+      padding: 1rem 10px;
+      background: #f9f9f9;
+      border-radius: 4px;
+      margin: 1rem 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      color: #606060;
+      &:focus {
+        border-color: $main;
+        border-width: 3px;
+      }
+    }
+
+    .textarea-label {
+      color: #606060;
+      font-size: 1rem;
+      background-color: white;
+      margin-left: 5px;
+    }
+
+    .linear-textarea {
+      background: #f9f9f9;
+      margin: 1rem 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 1rem;
+      text-align: left;
+      height: 9rem;
+      resize: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #606060;
+      &:focus {
+        border-color: $main;
+        border-width: 3px;
+      }
+    }
+  }
+
+  .separator-text {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: $main;
+    margin: 1rem 0;
+  }
+
+  .save-button {
+    background-color: $main;
+    border: 1px solid $main;
+    color: white;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 999px;
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
+
+.linear-input::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.linear-input::-ms-input-placeholder {
+  color: #ccc;
+}

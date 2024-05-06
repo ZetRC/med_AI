@@ -1,0 +1,136 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.form-wrapper {
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  max-width: 37rem;
+  margin: 2.5rem auto;
+  padding: 4rem;
+  background-color: white;
+}
+
+.linear-form select:focus,
+.linear-form textarea:focus,
+.linear-form input[type=text]:focus,
+.linear-form input[type=password]:focus,
+.linear-form input[type=datetime]:focus,
+.linear-form input[type=datetime-local]:focus,
+.linear-form input[type=date]:focus,
+.linear-form input[type=month]:focus,
+.linear-form input[type=time]:focus,
+.linear-form input[type=week]:focus,
+.linear-form input[type=number]:focus,
+.linear-form input[type=email]:focus,
+.linear-form input[type=url]:focus,
+.linear-form input[type=search]:focus,
+.linear-form input[type=tel]:focus,
+.linear-form input[type=color]:focus,
+.linear-form .uneditable-input:focus {
+  border-color: #65a1db;
+  border-width: 3px;
+  outline: 0 none;
+}
+.linear-form .input-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.linear-form .input-container .info-label {
+  color: #606060;
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  transition: 0.15s ease-in-out;
+  pointer-events: none;
+  height: 24px;
+  padding: 0 10px;
+  width: fit-content;
+  background-color: white;
+}
+.linear-form .input-container .linear-input:focus + .info-label {
+  top: 0px;
+  font-size: 12px;
+}
+.linear-form .input-container .error-label {
+  color: #dc3545;
+  font-size: 10pt;
+  margin-left: 10px;
+  position: relative;
+  top: -10px;
+  opacity: 0.9;
+}
+.linear-form .input-container .linear-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+  color: #606060;
+  margin-bottom: 20px;
+}
+.linear-form .input-container .linear-select {
+  text-align: left;
+  padding: 1rem 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin: 1rem 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #606060;
+}
+.linear-form .input-container .linear-select:focus {
+  border-color: #65a1db;
+  border-width: 3px;
+}
+.linear-form .input-container .textarea-label {
+  color: #606060;
+  font-size: 1rem;
+  background-color: white;
+  margin-left: 5px;
+}
+.linear-form .input-container .linear-textarea {
+  background: #f9f9f9;
+  margin: 1rem 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  text-align: left;
+  height: 9rem;
+  resize: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #606060;
+}
+.linear-form .input-container .linear-textarea:focus {
+  border-color: #65a1db;
+  border-width: 3px;
+}
+.linear-form .separator-text {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #65a1db;
+  margin: 1rem 0;
+}
+.linear-form .save-button {
+  background-color: #65a1db;
+  border: 1px solid #65a1db;
+  color: white;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 999px;
+}
+.linear-form .save-button:hover {
+  filter: brightness(1.1);
+}
+
+.linear-input::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.linear-input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=home.css.map */
